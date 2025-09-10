@@ -1,0 +1,135 @@
+{
+    "menu": [
+        {
+            "url": "dashboard",
+            "icon": "fa-solid fa-house",
+            "name": "Inicio",
+            "permissions": ["ver.bienvenida"]
+        },
+        {
+            "icon": "fa-solid fa-chart-pie",
+            "name": "Generar reportes",
+            "permissions": ["ver.estudiantes"]
+        },
+        {
+            "menuHeader": "APPS & PAGES",
+            "permissions": ["ver.roles"]
+        },
+        {
+            "name": "Seguridad",
+            "icon": "fa-solid fa-unlock-keyhole",
+            "permissions": ["ver.roles"],
+            "submenu": [
+                {
+                    "url": "ver.roles",
+                    "name": "Roles",
+                    "permissions": ["ver.roles"]
+                },
+                {
+                    "name": "Perfil personal",
+                    "permissions": ["ver.roles"]
+                }
+                ,
+                {
+                    "name": "Cuentas de pago",
+                    "permissions": ["ver.roles"]
+                }
+            ]
+        },
+        {
+            "icon": "fa-solid fa-school",
+            "name": "Colegios",
+            "permissions": ["ver.colegios"]
+        },
+        {
+            "menuHeader": "FORMS & TABLES",
+            "permissions": ["ver.estudiantes"]
+        },
+        {
+            "name": "Usuarios del sistema",
+            "icon": "fa-solid fa-users",
+            "permissions": ["ver.usuarios", "ver.colaboradores", "ver.representantes", "ver.estudiantes"],
+            "submenu": [
+                {
+                    "name": "Usuarios",
+                    "permissions": ["ver.usuarios"]
+                },
+                {
+                    "name": "Colaboradores",
+                    "permissions": ["ver.colaboradores", "crear.colaborador", "editar.colaborador"]
+                },
+                {
+                    "name": "Representantes",
+                    "permissions": ["ver.representantes", "crear.representante", "editar.representante"]
+                },
+                {
+                    "name": "Estudiantes",
+                    "permissions": ["ver.estudiantes", "crear.estudiante", "editar.estudiante"]
+                }
+            ]
+        },
+        {
+            "name": "Plan de estudios",
+            "icon": "fa-solid fa-layer-group",
+            "permissions": ["ver.cursos", "ver.niveles", "ver.grados", "ver.grado_cursos"],
+            "submenu": [
+                {
+                    "name": "Cursos",
+                    "permissions": ["ver.cursos"]
+                },
+                {
+                    "name": "Niveles",
+                    "permissions": ["ver.niveles"]
+                },
+                {
+                    "name": "Grados y cupos",
+                    "permissions": ["ver.grados"]
+                },
+                {
+                    "name": "Asignar docentes",
+                    "permissions": ["ver.grado_cursos"]
+                }
+            ]
+        },
+        {
+            "name": "Gestión de matrículas",
+            "icon": "fa-regular fa-file-lines",
+            "permissions": ["ver.matriculas", "crear.matriculas", "editar.matricula"],
+            "submenu": [
+                {
+                    "name": "Realizar matrícula",
+                    "permissions": ["crear.matriculas", "editar.matricula"]
+                },
+                {
+                    "name": "Historial de matrículas",
+                    "permissions": ["ver.matriculas"]
+                }
+            ]
+        },
+        {
+            "name": "Gestión de pagos",
+            "icon": "fa-solid fa-cash-register",
+            "permissions": ["realizar.pagos", "ver.pagos"],
+            "submenu": [
+                {
+                    "name": "Realizar pago",
+                    "permissions": ["realizar.pagos"]
+                },
+                {
+                    "name": "Historial de pagos",
+                    "permissions": ["ver.pagos"]
+                }
+            ]
+        },
+        {
+            "icon": "fa-solid fa-file-lines",
+            "name": "Mis contratos",
+            "permissions": ["ver.pagos"]
+        },
+        {
+            "icon": "fa-solid fa-coins",
+            "name": "Mi estado financiero",
+            "permissions": ["ver.pagos"]
+        }
+    ]
+}
