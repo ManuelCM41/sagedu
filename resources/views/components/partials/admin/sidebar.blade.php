@@ -32,7 +32,7 @@
 <flux:sidebar stashable class="bg-[#05134B] custom-scrollbar !transition-all !duration-500 relative pt-0 lg:z-0!" x-data
     x-bind:class="sidebarExpanded ? 'lg:!w-20 ' : 'lg:w-64'" x-cloak>
 
-    <div class="absolute inset-0 z-10 flex items-end justify-center opacity-5">
+    <div class="absolute inset-0 z-10 flex items-end justify-center opacity-10">
         <img class="w-[22rem] h-[22rem] object-cover" src="/img/logo.png" alt="" />
     </div>
 

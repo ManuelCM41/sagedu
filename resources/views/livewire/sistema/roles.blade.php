@@ -2,7 +2,7 @@
     <x-page-header route="ver.inicio" icon="fa-solid fa-user" title="Listado de roles" :breadcrumbs="['Home', 'Roles', 'Lista']" />
 
     @can('crear.rol')
-        <x-button-gradient class="w-full sm:w-max" wire:click="create()">
+        <x-button-gradient class="w-full sm:w-max" wire:click="crear()">
             <i class="fa-solid fa-plus"></i>
             Nuevo
         </x-button-gradient>
@@ -40,7 +40,7 @@
                         </x-button-gradient>
                     @endcan
                     @can('editar.rol')
-                        <x-button-gradient color="green" wire:click="edit({{ $r }})" class="flex-auto">
+                        <x-button-gradient color="green" wire:click="editar({{ $r }})" class="flex-auto">
                             <i class="fa-solid fa-pen fa-fw"></i>
                             Editar
                         </x-button-gradient>
@@ -52,4 +52,5 @@
     </div>
 
     @include('livewire.sistema.form.permisos')
+    @include('livewire.sistema.form.rol')
 </div>

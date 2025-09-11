@@ -26,7 +26,6 @@
                         @include('partials.admin.footer')
                     </div>
                 </div>
-                <img class="absolute z-0 w-40 right-4 bottom-3" src="{{ asset('/img/logo.png') }}" alt="" />
             </div>
         </div>
     </div>

@@ -4,8 +4,7 @@
 
 <div x-data="{ open: @entangle($attributes->wire('model')) }" x-cloak>
     <!-- Overlay -->
-    <div class="fixed inset-0 bg-black/40 z-50 transition-opacity" x-show="open" x-transition.opacity
-        @click="open = false"></div>
+    <div class="fixed inset-0 bg-black/40 z-50 transition-opacity" x-show="open" x-transition.opacity></div>
 
     <!-- Sidebar -->
     <div class="fixed top-0 right-0 w-full lg:w-[45vw] md:w-[55vw] h-full bg-white shadow-xl z-50 transform transition-transform"

@@ -122,11 +122,13 @@
             ]
         },
         {
+            "url": "ver.contratos",
             "icon": "fa-solid fa-file-lines",
             "name": "Mis contratos",
             "permissions": ["ver.pagos"]
         },
         {
+            "url": "ver.estado_financiero",
             "icon": "fa-solid fa-coins",
             "name": "Mi estado financiero",
             "permissions": ["ver.pagos"]

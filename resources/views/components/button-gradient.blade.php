@@ -26,6 +26,7 @@
         'teal' => 'from-teal-700 to-teal-300 shadow-teal-500/20 hover:shadow-teal-500/40',
         'yellow' =>
             'from-yellow-600 to-yellow-500/80 shadow-yellow-500/20 hover:shadow-yellow-500/40 active:from-yellow-600 active:to-yellow-600',
+        'none' => '!shadow-none',
     ];
 
     $gradient = $colorClasses[$color] ?? $colorClasses['gray'];
